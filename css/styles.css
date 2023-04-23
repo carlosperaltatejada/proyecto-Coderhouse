@@ -79,14 +79,6 @@ img{
     
 }
 
-.seccion-1-index{
-    height: 100%;
-    display: inline-block;
-    box-sizing: border-box;
-    margin: 2px;
-    padding: 20px;
-}
-
 body {
     background-color:#ecebe4;
     display: flex;
