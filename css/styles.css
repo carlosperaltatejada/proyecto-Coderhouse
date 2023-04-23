@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 80px;
+}
+
+.lista{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width:665px){
+    .lista{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+}
+
+header{
+    background-color:#429ea6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width:665px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+a {
+    color:white;
+    text-decoration: none;
+    display: flex;
+    border: 5px;
+    background-color: black;
+    padding: 10px;
+}
+
+.div-card{
+    background-color: #ecebe4;
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    border: solid 5px black;
+    padding: 15px;
+    color:black;
+    gap: 5px;
+}
+
+@media (max-width: 665px) {
+    .div-card{
+        width: 150px;
+        height: 400px;
+    }
+}
+
+.img-cards{
+    width: 224px;
+    height: 200px
+}
+
+.padre-platos, .postres, .menu-infantil, .bebidas, .entradas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+img{
+    max-width: 100%;
+    
+}
+
+.seccion-1-index{
+    height: 100%;
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 2px;
+    padding: 20px;
+}
+
+body {
+    background-color:#ecebe4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.evento-aniversario, .evento-graduacion{
+    width: 100%;
+    border:solid 3px black;
+    gap: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.evento-cumpleaños{
+    width: 100%;
+    border:solid 3px black;
+    gap: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+iframe{
+    margin-top: 20px;
+}
+
+
+.instalaciones{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.img-eventos{
+
+    height: 300px;
+    margin: 20px;
+    width: 1500px;
+}
+
+.eventos p{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.carousel-item img{
+height: 500px;
+width: 500px;
+}
+
+li a:hover{
+    background-color: purple;
+}
+
+.card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    width: 600px;
+    gap: 5px;
+}
+
+form{
+    border:solid 2px black;
+    width: 650px;
+    background-color: #6d4357;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+
+.modal-body{
+    color:black;
+}
+
+.centrar-formulario{
+    margin-left: 20px;
+}
+
+.carrusel{
+    width: 600px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+}
+
+.logo-whatsapp{
+    display: flex;
+    justify-content: end;
+}
