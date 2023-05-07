@@ -1,6 +1,10 @@
 .cuerpo-index{
     margin:$espacio-pequeño;
     font-size: $fuente-mediana;
+    p{
+        margin-top: $espacio-mediano;
+        margin-bottom: $espacio-mediano;
+    }
 }
 
 iframe{

@@ -65,6 +65,10 @@ li a {
   margin: 10px;
   font-size: 20px;
 }
+.cuerpo-index p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
 iframe {
   margin-top: 20px;
@@ -88,18 +92,18 @@ iframe {
   margin: 10px 0px;
 }
 
-@media (max-width: 480px) {
-  .div-card {
-    width: 110px;
-    height: 350px;
-    overflow: auto;
-    padding: 10px;
-  }
-}
 @media (max-width: 768px) {
   .div-card {
     width: 200px;
     height: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .div-card {
+    width: 170px;
+    height: 350px;
+    overflow: auto;
+    padding: 10px;
   }
 }
 .img-cards {
@@ -123,7 +127,7 @@ img {
 
 .evento-aniversario, .evento-graduacion {
   width: 100%;
-  border: solid 3px black;
+  border-bottom: solid 1px black;
   gap: 20px;
   display: flex;
   flex-direction: row;
@@ -131,7 +135,7 @@ img {
 
 .evento-cumpleaños {
   width: 100%;
-  border: solid 3px black;
+  border-bottom: solid 1px black;
   gap: 20px;
   display: flex;
   flex-direction: row-reverse;
@@ -149,6 +153,18 @@ img {
   margin: 20px;
 }
 
+@media (max-width: 480px) {
+  .evento-aniversario, .evento-graduacion, .evento-cumpleaños {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .evento-aniversario .img-eventos, .evento-graduacion .img-eventos, .evento-cumpleaños .img-eventos {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
 .instalaciones {
   display: flex;
   flex-direction: row;
@@ -158,14 +174,20 @@ img {
 }
 
 .carousel-item img {
-  height: 500px;
-  width: 500px;
+  height: 450px;
+  width: 400px;
 }
 
+@media (max-width: 480px) {
+  .carousel-item img {
+    height: 300px;
+  }
+}
 .carrusel {
   width: 600px;
   margin: auto;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {

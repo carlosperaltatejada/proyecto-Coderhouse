@@ -10,19 +10,19 @@
     margin: 10px 0px;
 }
 
-@media (max-width: $celulares) {
-    .div-card{
-        width: 110px;
-        height: 350px;
-        overflow: auto;
-        padding: $espacio-pequeño;
-    }
-}
-
 @media (max-width: $tablets) {
     .div-card{
         width: 200px;
         height: 350px;
+    }
+}
+
+@media (max-width: $celulares) {
+    .div-card{
+        width: 170px;
+        height: 350px;
+        overflow: auto;
+        padding: $espacio-pequeño;
     }
 }
 
