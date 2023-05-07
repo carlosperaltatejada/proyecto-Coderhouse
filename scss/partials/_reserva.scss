@@ -23,8 +23,8 @@ form{
     width: 650px;
     background-color: #6d4357;
     margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: $espacio-mediano;
+    margin-bottom: $espacio-mediano;
     color: white;
 }
 
@@ -45,5 +45,5 @@ form{
 }
 
 .centrar-formulario{
-    margin-left: 20px;
+    margin-left: $espacio-mediano;
 }

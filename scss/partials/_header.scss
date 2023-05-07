@@ -5,9 +5,9 @@
 
 .lista{
     list-style: none;
-    font-size: 20px;
+    font-size: $fuente-mediana;
     display: flex;
-    gap: 30px;
+    gap: $espacio-grande;
 }
 
 @media (max-width:$tablets){

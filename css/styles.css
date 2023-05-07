@@ -91,10 +91,13 @@ iframe {
   gap: 5px;
   margin: 10px 0px;
 }
+.div-card:hover {
+  transform: scale(1.03);
+}
 
 @media (max-width: 768px) {
   .div-card {
-    width: 110px;
+    width: 170px;
     height: 350px;
   }
 }
@@ -103,7 +106,7 @@ iframe {
   height: 200px;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 480px) {
   .div-card {
     width: 130px;
     height: 270px;
@@ -118,7 +121,7 @@ iframe {
 .padre-platos, .postres, .menu-infantil, .bebidas, .entradas {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
 }
 
 main {
@@ -178,13 +181,13 @@ img {
 }
 
 .carousel-item img {
-  height: 450px;
   width: 400px;
+  height: 450px;
 }
 
 @media (max-width: 480px) {
   .carousel-item img {
-    height: 300px;
+    height: 350px;
   }
 }
 .carrusel {
