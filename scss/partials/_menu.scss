@@ -12,23 +12,27 @@
 
 @media (max-width: $tablets) {
     .div-card{
-        width: 200px;
+        width: 110px;
         height: 350px;
-    }
-}
-
-@media (max-width: $celulares) {
-    .div-card{
-        width: 170px;
-        height: 350px;
-        overflow: auto;
-        padding: $espacio-pequeño;
     }
 }
 
 .img-cards{
     width: 224px;
     height: 200px
+}
+
+@media (max-width: 420px) {
+    .div-card{
+        width: 130px;
+        height: 270px;
+        overflow: auto;
+        padding: $espacio-pequeño;
+        img{
+            width: 150px;
+            height: 120px;
+        }
+    }
 }
 
 .padre-platos, .postres, .menu-infantil, .bebidas, .entradas{
