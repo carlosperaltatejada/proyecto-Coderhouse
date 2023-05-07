@@ -1,239 +1,242 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-.logo{
-    width: 80px;
-    margin: 10px 10px;
-}
-
-.lista{
-    list-style: none;
-    font-size: 20px;
-    display: flex;
-    gap: 30px;
-}
-
-@media (max-width:665px){
-    .lista{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 5px;
-        row-gap: 5px;
-    }
-}
-
-header{
-    background-color:#429ea6;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-@media (max-width:665px){
-    header{
-        display: flex;
-        flex-direction: column;
-    }
-}
-
-li a {
-    color:white;
-    text-decoration: none;
-    display: flex;
-    border: 5px;
-    background-color: black;
-    padding: 10px;
-}
-
-.cuerpo-index{
-    margin:10px;
-}
-
-.div-card{
-    background-color: #ecebe4;
-    display: inline-block;
-    width: 200px;
-    height: 350px;
-    border: solid 5px black;
-    padding: 15px;
-    color:black;
-    gap: 5px;
-    margin: 10px 0px;
-}
-
-@media (max-width: 665px) {
-    .div-card{
-        width: 150px;
-        height: 350px;
-    }
-}
-
-@media (max-width: 416px) {
-    .div-card{
-        width: 110px;
-        height: 350px;
-        overflow: auto;
-    }
-}
-
-.img-cards{
-    width: 224px;
-    height: 200px
-}
-
-.padre-platos, .postres, .menu-infantil, .bebidas, .entradas{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-main{
-    margin:10px;
-}
-
-img{
-    max-width: 100%;
-    
+@charset "UTF-8";
+/**colores**/
+/**tamaño de la fuente**/
+/**tamaño de pantallas**/
+/**espacio separacion (margenes, bordes, padding)**/
+* {
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-color:#ecebe4;
+  background-color: #ecebe4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+li a:hover {
+  background-color: purple;
+}
+
+.logo {
+  width: 80px;
+  margin: 10px 10px;
+}
+
+.lista {
+  list-style: none;
+  font-size: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+    row-gap: 5px;
+  }
+}
+header {
+  background-color: #429ea6;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  header {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+  }
+}
+li a {
+  color: white;
+  text-decoration: none;
+  display: flex;
+  border: 5px;
+  background-color: black;
+  padding: 10px;
 }
 
-.evento-aniversario, .evento-graduacion{
-    width: 100%;
-    border:solid 3px black;
-    gap: 20px;
-    display: flex;
-    flex-direction: row;
-
+.cuerpo-index {
+  margin: 10px;
+  font-size: 20px;
 }
 
-.evento-cumpleaños{
-    width: 100%;
-    border:solid 3px black;
-    gap: 20px;
-    display: flex;
-    flex-direction: row-reverse;
+iframe {
+  margin-top: 20px;
 }
 
-iframe{
-    margin-top: 20px;
-}
-
-.instalaciones{
-    display: flex;
-    flex-direction:row;
-    gap: 30px;
-    margin-top: 30px;
-    justify-content: center;
-}
-
-.img-eventos{
-
+@media (max-width: 480px) {
+  iframe {
+    width: 350px;
     height: 300px;
-    margin: 20px;
-    width: 1500px;
+  }
+}
+.div-card {
+  background-color: #ecebe4;
+  display: inline-block;
+  width: 200px;
+  height: 350px;
+  border: solid 5px black;
+  padding: 20px;
+  color: black;
+  gap: 5px;
+  margin: 10px 0px;
 }
 
-.eventos p{
-    display: flex;
-    align-items: center;
-    margin: 20px;
-}
-
-.carousel-item img{
-height: 500px;
-width: 500px;
-}
-
-li a:hover{
-    background-color: purple;
-}
-
-.card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 5px;
-    width: 600px;
-    gap: 5px;
-}
-
-@media (max-width:664px){
-    .card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones{
-        width: 350px;
-    }
-}
-
-@media (max-width:425px){
-    .card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones{
-        width: 250px;
-    }
-}
-
-form{
-    border:solid 2px black;
-    width: 650px;
-    background-color: #6d4357;
-    margin: auto;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-@media (max-width:664px){
-    form{
-        width: 400px;
-    }
-}
-
-@media (max-width:425px){
-    form{
-        width: 300px;
-    }
-}
-
-.modal-body{
-    color:black;
-}
-
-.centrar-formulario{
-    margin-left: 20px;
-}
-
-.carrusel{
-    width: 600px;
-    margin: auto;
-    margin-top: 10px;
-}
-
-@media (max-width:616px){
-    .carrusel{
-        width: 400px;
-    }
-}
-
-@media (max-width:429px){
-    .carrusel{
-        width: 200px;
-    }
-}
-
-footer{
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: auto;
-    background-color: black;
-    color: white;
+@media (max-width: 480px) {
+  .div-card {
+    width: 110px;
+    height: 350px;
+    overflow: auto;
     padding: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .div-card {
+    width: 200px;
+    height: 350px;
+  }
+}
+.img-cards {
+  width: 224px;
+  height: 200px;
 }
 
-.logo-whatsapp{
-    display: flex;
-    justify-content: end;
+.padre-platos, .postres, .menu-infantil, .bebidas, .entradas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
+
+main {
+  margin: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.evento-aniversario, .evento-graduacion {
+  width: 100%;
+  border: solid 3px black;
+  gap: 20px;
+  display: flex;
+  flex-direction: row;
+}
+
+.evento-cumpleaños {
+  width: 100%;
+  border: solid 3px black;
+  gap: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.img-eventos {
+  height: 300px;
+  margin: 20px;
+  width: 1200px;
+}
+
+.eventos p {
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.instalaciones {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.carousel-item img {
+  height: 500px;
+  width: 500px;
+}
+
+.carrusel {
+  width: 600px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .carrusel {
+    width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .carrusel {
+    width: 200px;
+  }
+}
+.card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 5px;
+  width: 600px;
+  gap: 5px;
+}
+
+@media (max-width: 768px) {
+  .card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones {
+    width: 350px;
+  }
+}
+@media (max-width: 480px) {
+  .card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones {
+    width: 250px;
+  }
+}
+form {
+  border: solid 2px black;
+  width: 650px;
+  background-color: #6d4357;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  form {
+    width: 300px;
+  }
+}
+.modal-body {
+  color: black;
+}
+
+.centrar-formulario {
+  margin-left: 20px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: auto;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.logo-whatsapp {
+  display: flex;
+  justify-content: end;
+}
+
+/*# sourceMappingURL=styles.css.map */

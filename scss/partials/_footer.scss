@@ -1,0 +1,14 @@
+footer{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: auto;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    font-size: $fuente-mediana;
+}
+
+.logo-whatsapp{
+    display: flex;
+    justify-content: end;
+}

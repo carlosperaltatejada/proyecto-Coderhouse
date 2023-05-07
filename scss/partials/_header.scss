@@ -1,0 +1,43 @@
+.logo{
+    width: 80px;
+    margin: 10px 10px;
+}
+
+.lista{
+    list-style: none;
+    font-size: 20px;
+    display: flex;
+    gap: 30px;
+}
+
+@media (max-width:$tablets){
+    .lista{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
+
+header{
+    background-color: $color-secundario;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+@media (max-width: $celulares){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+li a {
+    color:white;
+    text-decoration: none;
+    display: flex;
+    border: 5px;
+    background-color: black;
+    padding: 10px;
+}

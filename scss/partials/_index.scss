@@ -1,0 +1,15 @@
+.cuerpo-index{
+    margin:$espacio-pequeño;
+    font-size: $fuente-mediana;
+}
+
+iframe{
+    margin-top: $espacio-mediano;
+}
+
+@media (max-width: $celulares){
+    iframe{
+        width: 350px;
+        height: 300px;
+    }
+}

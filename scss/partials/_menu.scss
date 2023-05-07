@@ -1,0 +1,46 @@
+.div-card{
+    background-color: $color-primario;
+    display: inline-block;
+    width: 200px;
+    height: 350px;
+    border: solid 5px black;
+    padding: $espacio-mediano;
+    color:black;
+    gap: 5px;
+    margin: 10px 0px;
+}
+
+@media (max-width: $celulares) {
+    .div-card{
+        width: 110px;
+        height: 350px;
+        overflow: auto;
+        padding: $espacio-pequeño;
+    }
+}
+
+@media (max-width: $tablets) {
+    .div-card{
+        width: 200px;
+        height: 350px;
+    }
+}
+
+.img-cards{
+    width: 224px;
+    height: 200px
+}
+
+.padre-platos, .postres, .menu-infantil, .bebidas, .entradas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main{
+    margin:10px;
+}
+
+img{
+    max-width: 100%;   
+}

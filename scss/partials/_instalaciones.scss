@@ -1,0 +1,30 @@
+.instalaciones{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.carousel-item img{
+    height: 500px;
+    width: 500px;
+    }
+
+    .carrusel{
+        width: 600px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    @media (max-width:$tablets){
+        .carrusel{
+            width: 400px;
+        }
+    }
+    
+    @media (max-width:$celulares){
+        .carrusel{
+            width: 200px;
+        }
+    }

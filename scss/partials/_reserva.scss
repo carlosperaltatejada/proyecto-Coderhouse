@@ -1,0 +1,49 @@
+.card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 5px;
+    width: 600px;
+    gap: 5px;
+}
+
+@media (max-width:$tablets){
+    .card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones{
+        width: 350px;
+    }
+}
+
+@media (max-width:$celulares){
+    .card-nombre, .card-apellido, .card-correo, .card-celular, .card-fecha, .card-hora, .card-peticiones{
+        width: 250px;
+    }
+}
+
+form{
+    border:solid 2px black;
+    width: 650px;
+    background-color: #6d4357;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+@media (max-width:$tablets){
+    form{
+        width: 400px;
+    }
+}
+
+@media (max-width:$celulares){
+    form{
+        width: 300px;
+    }
+}
+
+.modal-body{
+    color:black;
+}
+
+.centrar-formulario{
+    margin-left: 20px;
+}
