@@ -15,8 +15,9 @@
 
 @media (max-width: $tablets) {
     .div-card{
-        width: 170px;
+        width: 200px;
         height: 350px;
+        overflow: auto;
     }
 }
 
