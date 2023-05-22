@@ -9,6 +9,8 @@
 
 iframe{
     margin-top: $espacio-mediano;
+    display: block;
+    margin: 0 auto;
 }
 
 @media (max-width: $celulares){
